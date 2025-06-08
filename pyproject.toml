@@ -1,5 +1,5 @@
 [project]
-name = "webgui"
+name = "gui-web"
 dynamic = ["scripts"]
 version = "0.2.2"
 description = "Add your description here"
@@ -11,6 +11,7 @@ dependencies = [
     "dynaconf>=3.2.11",
     "hatchling>=1.27.0",
     "psutil>=7.0.0",
+    "setuptools>=80.9.0",
     "structlog>=25.4.0",
     "waitress>=3.0.2",
     "whitenoise>=6.9.0",
