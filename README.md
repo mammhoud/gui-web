@@ -17,7 +17,7 @@
 ## Install
 
 ```bash
-pip install flaskwebgui
+pip install git+https://github.com/mammhoud/gui-web
 ````
 
 
