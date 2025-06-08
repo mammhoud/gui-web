@@ -1,0 +1,18 @@
+default:
+  APP: "test.wsgi.application"
+  PORT: 3003
+
+  BROWSER_PATH: null # "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"  # Optional
+  SERVER_TYPE: "django"
+  WIDTH: 1020
+  HEIGHT: 720
+  FULLSCREEN: true
+  APP_MODE: true
+  SOCKETIO: null
+  ON_STARTUP: null
+  ON_SHUTDOWN: null  # overridden in Python code
+  EXTRA_FLAGS:
+    - "--disable-gpu"
+  PROFILE_DIR: null
+  EXIT_AFTER: 15
+
