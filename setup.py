@@ -10,7 +10,7 @@ with open("README.md", "r") as fh:
 
 
 setup(
-    name="gui-web",
+    name="web_gui",
     version="1.2.2",
     packages=find_packages(where="."),
     description="Create desktop applications with Flask/Django/FastAPI!",
