@@ -1,5 +1,5 @@
 [project]
-name = "gui-web"
+name = "web_gui"
 dynamic = ["scripts"]
 version = "0.2.2"
 description = "Add your description here"
