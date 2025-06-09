@@ -8,7 +8,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from flaskwebgui import FlaskUI
+from web_gui import main
 
 app = FastAPI()
 
@@ -24,9 +24,11 @@ async def home(request: Request):
     return templates.TemplateResponse("some_page.html", {"request": request})
 
 if __name__ == "__main__":
-    FlaskUI(app=app, server="fastapi").run()
+    main()
 ```
 
 > FastAPI app will be served by `uvicorn`.
+---
+dont forget to add settings.yaml at the same dir of gui.py
 
 ---

@@ -1,13 +1,7 @@
 
 ## Usage with Django
 
-1. Install dependencies:
-
-```bash
-pip install waitress whitenoise
-```
-
-2. Configure static and media files in `settings.py`:
+1. Configure static and media files in `settings.py`:
 
 ```python
 STATIC_URL = "static/"
@@ -33,11 +27,8 @@ MIDDLEWARE = [
 4. Create a `gui.py` file next to `manage.py`:
 
 ```python
-from flaskwebgui import FlaskUI
-from project_name.wsgi import application as app
-
-if __name__ == "__main__":
-    FlaskUI(app=app, server="django").run()
+from web_gui import main
+main()
 ```
 
 5. Run the desktop app:
@@ -45,5 +36,6 @@ if __name__ == "__main__":
 ```bash
 python gui.py
 ```
-
+---
+dont forget to add settings.yaml at the same dir of gui.py
 ---
