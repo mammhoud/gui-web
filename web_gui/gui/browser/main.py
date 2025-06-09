@@ -4,6 +4,7 @@ import structlog
 
 from ..actions import Controller
 from .path import BrowserPathFinder
+from security import safe_command
 
 log = structlog.get_logger()
 
@@ -72,7 +73,7 @@ class BrowserManager:
     def start(self):
         cmd = self.build_command()
         log.info("Launching browser:", cmd=" ".join(cmd))
-        self.browser_process = subprocess.Popen(cmd, stderr=subprocess.DEVNULL)
+        self.browser_process = safe_command.run(subprocess.Popen, cmd, stderr=subprocess.DEVNULL)
         self.browser_pid = self.browser_process.pid
         # log.info("Browser PID:", self.browser_pid)
 
