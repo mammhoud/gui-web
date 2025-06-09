@@ -10,7 +10,7 @@ with open("README.md", "r") as fh:
 
 
 setup(
-    name="web_gui",
+    name="gui_web",
     version="1.2.2",
     packages=find_packages(where="."),
     description="Create desktop applications with Flask/Django/FastAPI!",
@@ -29,7 +29,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "webgui = web_gui.main:main",  # runs `main()` from `web_gui/main.py`
+            "webgui = gui_web.main:main",  # runs `main()` from `gui_web/main.py`
         ],
     },
 )

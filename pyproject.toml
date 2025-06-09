@@ -1,5 +1,5 @@
 [project]
-name = "web_gui"
+name = "gui_web"
 dynamic = ["scripts"]
 version = "0.2.2"
 readme = "README.md"
