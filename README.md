@@ -1,7 +1,7 @@
 # gui-web: Create Desktop Applications with Flask / FastAPI / Django!
 
 [gui-web GitHub Repository](https://github.com/mammhoud/gui-web/tree/main)  
-[PyPI: flaskwebgui (gui-web)](https://pypi.org/project/flaskwebgui/)
+Cloned from :[PyPI: flaskwebgui (gui-web)](https://pypi.org/project/flaskwebgui/)
 
 ---
 
